@@ -1,0 +1,21 @@
+.feature {
+    padding: 88px 0 88px 0;
+    display: block;
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 88px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        padding: 22px 0 23px 22px;
+    }
+    &-icon {
+        padding-right: 24px;
+    }
+    &-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

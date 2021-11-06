@@ -1,0 +1,12 @@
+.icon{
+    display: flex;
+    list-style: none;
+    gap: 0 42px;
+    margin-left: 141px;
+    li a {
+        color: $primary-color;
+        i {
+            font-size: 24px;
+        }
+    }
+}

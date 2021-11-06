@@ -1,0 +1,130 @@
+.hero {
+    max-height: 635px;
+    height: 100%;
+    &-main {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        padding: 60px;
+        background: rgba(255, 255, 255, .6);
+        z-index: 1;
+      
+    }
+    &-heading {
+        font-size: 56px;
+        font-weight: bold;
+        line-height: 120%;
+        margin-bottom: 12px;
+    }
+    &-desc {
+        font-size: 20px;
+        color: $gray;
+        margin-bottom: 48px;
+    }
+    &-gallery__wrapper {
+        position: relative;
+        top: -33.2rem;
+        z-index: auto;
+    }
+    &-gallery__list {
+        display: flex;
+        position: relative;
+        transition: all 0.5s linear;
+    }
+    &-gallery__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-infor {
+        display: flex;
+        position: relative;
+        left: 37rem;
+        top: -11rem;
+        width: 100%;
+        max-width: 300px;
+        background: rgba(255, 255, 255, .6);
+        z-index: 1;
+    }   
+    &-note {
+        padding: 24px 57px 24px 24px;
+    }
+    &-id {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    &-name {
+        line-height: 150%;
+    }
+    &-price {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 150%;
+    }
+    &-next__infor {
+        height: 24px;
+        width: 24px;
+        margin: 87px -22px 0px 14px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slick-initialized .slick-slide {
+        margin: 0 35px;
+    }
+    
+    .arrows {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 92px;
+        gap: 0 8px;
+        padding-bottom: 22px;
+    }
+    
+    .arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background-color: #F9F1E7;
+        color: $orange;
+    }
+    
+    .slick-arrow:hover {
+        background-color: $orange;
+        color: white;
+    }
+    
+    .slick-dots {
+        position: relative;
+        width: 120px;
+        list-style: none;
+        top: -47.5rem;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 0 20px;
+    }
+    
+    .slick-dots button {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        font-size: 0;
+        background-color: #D8D8D8;
+    }
+    
+    .slick-dots .slick-active button {
+        background-color: $orange;
+    }
+}
+

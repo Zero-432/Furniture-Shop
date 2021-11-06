@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 24px 140px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &--primary {
+        color: white;
+        background-color: $orange;
+    }
+    &--secondary {
+        color: $orange;
+        border: 1px solid $orange;
+        box-sizing: border-box;
+    }
+}
+
+.button-small {
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &--primary {
+        color: white;
+        background-color: $orange;
+    }
+    &--secondary {
+        color: $orange;
+        border: 1px solid $orange;
+        box-sizing: border-box;
+    }
+}
+
+.text {
+  line-height: 150%;
+}

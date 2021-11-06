@@ -1,0 +1,11 @@
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 0 42px;
+    &-link {
+        text-decoration: none;
+        color: $primary-color;
+        padding-right: 8px;
+        line-height: 150%;
+    }
+}
