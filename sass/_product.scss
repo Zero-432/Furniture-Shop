@@ -130,3 +130,19 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 1439px) {
+    .product {
+        &-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .product {
+        &-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

@@ -11,4 +11,84 @@
         font-weight: bold;
         color: $black;
     }
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 0 42px;
+        &-link {
+            text-decoration: none;
+            color: $primary-color;
+            padding-right: 8px;
+            line-height: 150%;
+        }
+    }
+    .icon{
+        display: flex;
+        list-style: none;
+        gap: 0 42px;
+        margin-left: 141px;
+        li a {
+            color: $primary-color;
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+    .search {
+        display: flex;
+        margin-left: 75px;
+        align-items: center;
+        padding: 12px 260px 12px 12px;
+        background-color: white;
+        &-input {
+          border: 0;
+          padding-left: 12px;
+          font-size: 14px;
+          font-weight: lighter;
+        }
+      }
+      
+}
+
+@media screen and (max-width: 1439px) {
+    .header {
+        &-logo {
+            padding-right: 30px;
+        }
+       .menu {
+           gap: 0 30px;
+           &-item {
+               display: flex;
+           }
+       }
+       .search {
+           margin-left: 40px;
+           padding-right: 35px;
+       }
+       .icon {
+           margin-left: 70px;
+       }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        .menu {
+            display: none;
+        }
+        .search {
+            padding-right: 90px;
+        }
+        .icon {
+            margin-left: 65px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-main {
+        :not(.header-logo) {
+            display: none;
+        }
+    }
 }

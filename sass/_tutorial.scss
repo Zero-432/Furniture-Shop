@@ -1,0 +1,122 @@
+.tutorial {
+    margin-bottom: 44px;
+    &-heading {
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &-wrapper {
+        position: relative;
+        .arrows {
+            position: absolute;
+            // width: 100%;
+            top: 25%;
+            transform: translateY(25%);
+            z-index: 2;
+            .arrow {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: none;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: white;
+                color: $orange;
+            }
+            .arrow:hover {
+                background-color: $orange;
+                color: white;
+            }
+            .tutorial-arrow__left {
+                position: relative;
+                transform: translateX(-50%);
+            }
+            .tutorial-arrow__right {
+                position: relative;
+                right: -1238%;
+                // transform: translateX(80%);           
+            }
+        }
+    }
+    &-list {
+        transition: all 0.5s linear;
+    }
+    &-content {
+        width: 391px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0px 16px 16px;
+    }
+    &-title {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 120%;
+        word-break: break-word;
+        margin-bottom: 8px;
+        flex-shrink: 0;
+    }
+    &-date__modified {
+        margin-top: auto;
+        font-size: 14px;
+        color: $gray;
+        flex: 1;
+    }
+
+    .slick-initialized .slick-slide {
+        margin: 0 35px;
+    }
+    .slick-slide.slick-active {
+        padding-bottom: 18px;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .tutorial-content {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    .slick-dots {
+        position: relative;
+        margin-top: 25px;
+        width: 120px;
+        list-style: none;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0 20px;
+    }
+    .slick-dots button {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        font-size: 0;
+        background-color: #D8D8D8;
+    }
+    
+    .slick-dots .slick-active button {
+        background-color: $orange;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .tutorial {
+        &-wrapper {
+            .arrows {
+                .tutorial-arrow__right {
+                    right: -865%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .tutorial {
+        &-wrapper {
+            .arrows {
+                display: none;
+            }
+        }
+    }
+}

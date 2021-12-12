@@ -128,3 +128,22 @@
     }
 }
 
+@media screen and (max-width: 1439px) {
+    .hero {
+        .slick-dots {
+            left: 60%;
+        }
+        .arrows {
+            padding-right: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hero {
+        .slick-dots {
+            visibility: hidden;
+        }
+    }
+}
+
